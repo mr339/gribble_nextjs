@@ -201,10 +201,10 @@
     "@babel/helper-validator-identifier" "^7.22.15"
     to-fast-properties "^2.0.0"
 
-"@grafbase/sdk@^0.0.25":
-  version "0.0.25"
-  resolved "https://registry.yarnpkg.com/@grafbase/sdk/-/sdk-0.0.25.tgz#aa23b6663c288619af8b2437d9adc8b73d28287a"
-  integrity sha512-VF5jSVRdv574g9D51pOwSTEDGCfY8XNdLvSdr6b4DH4LyyO147AXKDY9mO1OI5RXT7JJHSTNEzQhpBCWas543w==
+"@grafbase/sdk@^0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@grafbase/sdk/-/sdk-0.6.1.tgz#7ddfb1389caf7c31376032396fbcf88596ad05be"
+  integrity sha512-8DYG9EgLVVgyf1BkTJuR43XHlowz9Vx8AdERTQtSNKXVUmMKcpBBV8kKTP803K9TzwmMh/bQJNKD1hWlWVSjzg==
   dependencies:
     dotenv "^16.1.4"
     type-fest "^3.9.0"
@@ -825,6 +825,11 @@ graphql-request@^6.1.0:
   dependencies:
     "@graphql-typed-document-node/core" "^3.2.0"
     cross-fetch "^3.1.5"
+
+graphql@^16.8.0:
+  version "16.8.0"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.8.0.tgz#374478b7f27b2dc6153c8f42c1b80157f79d79d4"
+  integrity sha512-0oKGaR+y3qcS5mCu1vb7KG+a89vjn06C7Ihq/dDl3jA+A8B3TKomvi3CiEcVLJQGalbu8F52LxkOym7U5sSfbg==
 
 has-flag@^3.0.0:
   version "3.0.0"
