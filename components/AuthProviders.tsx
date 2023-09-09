@@ -1,5 +1,4 @@
 "use client";
-
 import { getProviders, signIn } from "next-auth/react";
 import React, { useEffect, useState } from "react";
 
@@ -29,19 +28,21 @@ const AuthProviders = () => {
     fetchProviders();
   }, []);
 
-  if (providers) {
-    return (
-      <div>
-        {Object.values(providers).map((provider: Provider, i) => (
-          <Button
-            key={i}
-            title="Sign In"
-            handleClick={() => signIn(provider?.id)}
-          />
-        ))}
-      </div>
-    );
+  if (!providers) {
+    return null; // Return null when providers are not available yet
   }
+
+  return (
+    <div>
+      {Object.values(providers).map((provider: Provider, i) => (
+        <Button
+          key={i}
+          title="Sign In"
+          handleClick={() => signIn(provider?.id)}
+        />
+      ))}
+    </div>
+  );
 };
 
 export default AuthProviders;
